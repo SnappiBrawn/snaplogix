@@ -1,0 +1,29 @@
+- title: Web Development
+  description: We craft beautiful, user-friendly websites that convert visitors into customers. From simple landing pages to complex e-commerce platforms, we build websites that meet your specific needs and goals.
+  icon: fas fa-laptop-code 
+  link: /
+
+- title: Custom Applications
+  description: Need a solution tailored to your unique business needs? We develop custom applications to automate workflows, manage data, and streamline your operations. Let us create the tools that empower your success.
+  icon: fas fa-code-branch
+  link: /
+
+- title: Logo Design
+  description: A strong logo is essential for brand recognition. We design professional, memorable logos that capture the essence of your business and set you apart from the competition.
+  icon: fas fa-image  
+  link: /
+
+- title: Content Marketing
+  description: Create high-quality content that engages your audience, establishes your brand as a thought leader, and drives organic traffic to your website. We'll help you develop a content strategy that attracts and converts ideal customers.
+  icon: fas fa-edit 
+  link: /
+
+- title: Digital Marketing
+  description: Increase your online visibility and reach your target audience with our comprehensive digital marketing strategies. We leverage the power of social media, email marketing, and paid advertising to drive targeted traffic and conversions.
+  icon: fas fa-ad
+  link: /
+
+- title: SEO Optimization
+  description: Get your website found by your ideal customers! Our SEO services help improve your website's ranking in search engine results pages (SERPs) to attract organic traffic and qualified leads.
+  icon: fas fa-search  
+  link: /

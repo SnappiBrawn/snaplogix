@@ -1,0 +1,20 @@
+title: SnapLogix
+email: snaplogix@gmail.com
+contact: +91 8296526447
+description: >- 
+  SnapLogix aims to arm every business out there with its own website, providing them with their much needed and deserved digital real estate.
+baseurl: ""
+url: "https://snaplogix.in"
+address: "Bangalore, India"
+address-link: https://maps.app.goo.gl/L3s7F1tZei9Q3Wdh8
+twitter_username: snaplogix
+github_username:  SnappiBrawn
+
+
+notification: Expand your business beyond physical boundaries
+
+sass:
+  sass_dir: assets/css/_sass
+
+plugins:
+  - jekyll-feed

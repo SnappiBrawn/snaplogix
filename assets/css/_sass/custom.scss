@@ -1,0 +1,147 @@
+.topbar {
+    font-size: 1.1rem;
+
+    .top-info {
+        a {
+            color: $primary;
+            text-decoration: none;
+        }
+    }
+
+    #note {
+        overflow: hidden;
+        width: 50%;
+        white-space: nowrap;
+
+        i {
+            position: relative;
+            display: inline-block;
+            animation: marqueemove 10s infinite;
+        }
+
+        @keyframes marqueemove {
+            from {
+                left: 100%;
+            }
+
+            to {
+                left: -120%;
+            }
+        }
+    }
+}
+
+
+.navbar {
+    img {
+        max-height: 80px;
+        padding: 0 10px 0 0;
+    }
+}
+
+.carousel-item {
+    img {
+        max-height: 85vh;
+        object-fit: cover;
+        filter: brightness(80%);
+    }
+
+    .carousel-caption {
+        margin-bottom: 100px;
+        font-size: x-large;
+
+        h5 {
+            color: $secondary;
+        }
+    }
+}
+
+.counter-wrapper {
+    h1 {
+        font-size: 80px;
+    }
+
+    h5 {
+        font-size: 40px;
+    }
+}
+
+.services-item{
+    background-color:rgba(red($secondary), green($secondary), blue($secondary), 0.1);
+    overflow: hidden;
+
+    .services-content{
+        cursor: pointer;
+
+        .services-content-icon{
+            border: $secondary 1px solid;
+            border-radius: 50%;
+            width: 8em;
+            aspect-ratio: 1 / 1;
+            margin: auto;
+            padding: 10px;
+            background-color: rgba(red($secondary), green($secondary), blue($secondary), 0.5);
+            transition-duration: 0.3s;
+
+            i{
+                transform: translateY(0.15em);
+                
+            }
+        }
+        &:hover .services-content-icon{
+            box-shadow: 0px 0px 450px 450px rgba(red($secondary), green($secondary), blue($secondary), 0.5);
+            background-color: rgba(red($secondary), green($secondary), blue($secondary), 0.3);
+        }
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0;
+    }
+
+    .topbar {
+        #note {
+            width: 100%;
+            font-size: x-small;
+        }
+    }
+
+    .navbar {
+        img {
+            max-height: 50px;
+            padding: 0 10px;
+        }
+    }
+
+    .carousel-item {
+        img {
+            height: 60vh;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            font-size: small;
+            margin-bottom: 50px;
+        }
+    }
+
+    .counter-wrapper {
+
+        h1{
+            font-size: 70px;
+            padding: 10px;
+            font-family: monospace;
+        }
+
+        h5{
+            font-size: 35px;
+            padding: 10px;
+        }
+    }
+
+    .about-us{
+        text-align: center;
+    }
+}

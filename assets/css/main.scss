@@ -1,0 +1,16 @@
+---
+---
+
+@charset 'utf-8';
+
+
+$secondary: #14CC60;
+$primary: #036D19;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+      @content;
+    }
+  }
+
+@import 'bootstrap', 'custom';
