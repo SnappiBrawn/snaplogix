@@ -66,15 +66,15 @@
     }
 }
 
-.services-item{
-    background-color:rgba(red($secondary), green($secondary), blue($secondary), 0.1);
+.services-item {
+    background-color: rgba(red($secondary), green($secondary), blue($secondary), 0.1);
     overflow: hidden;
     height: 100%;
 
-    .services-content{
+    .services-content {
         cursor: pointer;
 
-        .services-content-icon{
+        .services-content-icon {
             border: $secondary 1px solid;
             border-radius: 50%;
             width: 8em;
@@ -84,19 +84,47 @@
             background-color: rgba(red($secondary), green($secondary), blue($secondary), 0.5);
             transition-duration: 0.5s;
 
-            i{
+            i {
                 transform: translateY(0.15em);
                 transition-duration: 0.5s;
-                
+
             }
         }
-        &:hover .services-content-icon{
+
+        &:hover .services-content-icon {
             box-shadow: 0px 0px 0px 450px rgba(red($secondary), green($secondary), blue($secondary), 0.9);
             background-color: rgba(red($secondary), green($secondary), blue($secondary), 0.3);
 
-            i{
-                transform: translate(-0.05em,0.10em);
+            i {
+                transform: translate(-0.05em, 0.10em);
                 text-shadow: 5px 5px rgba(red($secondary), green($secondary), blue($secondary), 0.4);
+            }
+        }
+    }
+}
+
+.project{
+    background-color: $secondary;
+    color: white;
+    .container{
+        max-width: 100vw;
+        .row{
+            overflow: hidden;
+            flex-wrap: nowrap;
+
+            img{
+                width: 200px;
+                box-shadow: 0 0 5px grey;
+                border-radius: 10px;
+                padding: 0;
+                margin: 10px;
+                animation: scrollx 20s infinite linear;
+                filter:brightness(90%);
+                cursor: pointer;
+            }
+            @keyframes scrollx{
+                0% {transform: translateX(0px);}
+                100% {transform: translateX(calc(-11 * (100% + 20px)));}
             }
         }
     }
@@ -136,19 +164,19 @@
 
     .counter-wrapper {
 
-        h1{
+        h1 {
             font-size: 70px;
             padding: 10px;
             font-family: monospace;
         }
 
-        h5{
+        h5 {
             font-size: 35px;
             padding: 10px;
         }
     }
 
-    .about-us{
+    .about-us {
         text-align: center;
     }
 }
