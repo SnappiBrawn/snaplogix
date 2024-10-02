@@ -50,3 +50,15 @@ $('.counter').each(function() {
       }
     });  
   });
+
+
+// testimonials carousel
+$(document).ready(function(){
+  $('.testimonial-carousel').slick({
+    centerMode: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    adaptiveHeight: true,
+  });
+});

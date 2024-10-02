@@ -1,0 +1,42 @@
+<div class="container-fluid py-5 team testimonials">
+    <div class="container">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+            <h5 class="text-primary">Testimonials</h5>
+            <h1>Why Our Clients Choose Us</h1>
+        </div>
+        <div class="row people">
+            <div class=".nav-buttons"></div>
+            <div class="testimonial-carousel">
+                <!-- <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="/assets/images/logo.svg">
+                    <h5 class="name">Carl Kent</h5>
+                    <p class="title">Founder of Style Co.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                    <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+                </div>
+                <div class="author"><img class="rounded-circle" src="/assets/images/logo.svg">
+                    <h5 class="name">Emily Clark</h5>
+                    <p class="title">Owner of Creative Ltd.</p>
+                </div>
+            </div> -->
+                {% for comment in site.data.comments %}
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <p class="description">{{ comment.comment }}</p>
+                    </div>
+                    <div class="author"><img class="rounded-circle" src="{{ comment.logo }}">
+                        <h5 class="name">{{ comment.by }}</h5>
+                        <p class="title">{{ comment.of }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
