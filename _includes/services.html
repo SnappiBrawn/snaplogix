@@ -4,7 +4,7 @@
             <h5 class="text-primary">Our Services</h5>
             <h1>Our Services That'll Help You Thrive Online</h1>
         </div>
-        <div class="row g-5 services-inner">
+        <div class="row gy-5 g-md-5 services-inner">
             {% for item in site.data.services %}
             {% assign delay = forloop.index0 | modulo: 3 |times: 200 %}
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="{{ delay }}ms">
