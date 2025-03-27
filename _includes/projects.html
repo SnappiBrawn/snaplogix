@@ -1,16 +1,16 @@
 <div class="container-fluid project py-5 mb-5" id="projects">
     <div class="container">
-        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+        <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 680px;">
             <h5 class="text-light">Our projects</h5>
-            <h1>Clients We've Worked With</h1>
+            <h1>Major Clients We've Worked With</h1>
         </div>
         <div class="row gy-5 g-md-5">
             {% for brand in site.data.brands %}
                 <img src="{{ brand.logo }}">
             {% endfor %}
-            {% for brand in site.data.brands %}
+            <!-- Uncomment when you enable looping {% for brand in site.data.brands %}
                 <img src="{{ brand.logo }}">
-            {% endfor %}
+            {% endfor %} -->
         </div>
     </div>
 </div>
